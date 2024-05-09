@@ -1,0 +1,13 @@
+#audio-table {
+    background-color: black;
+    color: violet;
+}
+
+#video-table {
+    background-color: blueviolet;
+    color: palevioletred;
+}
+
+.audio-video-tables {
+    font-family: 'Courier New', Courier, monospace;
+}
