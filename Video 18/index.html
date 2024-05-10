@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BoxModel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: red;
+        }
+
+        .box1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            border: 2px black solid;
+            margin: 10px;
+        }
+
+        .box2 {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 200px;
+            margin: 10px;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box box2">
+        I am another box!!
+    </div>
+
+    <div>
+        Margin Collapse : Basically when two elements are adjacent to each other, the margin of the element with the larger margin will be applied.
+        <br>
+        <br>
+        Box sizing : By default, the padding and border are added to the width and height of the element. But if we use box-sizing: border-box, then the padding and border will be included in the width and height of the element.
+    </div>
+</body>
+</html>
