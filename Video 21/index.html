@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1 {
+            color: aqua !important;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+        <ol>
+            <li>Inline > ID > Class/Attribute > Element > Universal Selector</li>
+            <li>If put !important then it's a done game, that is chosen irrespective of inline</li>
+            <li>Look at Code with Harry Notes for the values of Specificity to calculate values!</li>
+        </ol>
+    </div>
+</body>
+</html>
