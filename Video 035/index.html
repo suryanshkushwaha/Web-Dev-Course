@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: rebeccapurple;
+        }
+
+        .box::first-line {
+            background-color: red;
+        }
+
+        .boxes * {
+            color: white;
+            border: 2px solid black;
+        }
+
+        p,
+        .box,
+        [data-color="primary"] {
+            padding: 23px;
+        }
+
+        .box:nth-child(odd) {
+            font-weight: bold;
+        }
+
+        .box:nth-last-child(2) {
+            font-style: italic;
+        }
+
+        .boxes::before {
+            content: "suryansh is the best";
+        }
+
+        .boxes::after {
+            content: "best coder ever"
+        }
+
+        ::selection {
+            color: black;
+            background-color: blue;
+        }
+
+        .box::first-letter {
+            font-size: 35px;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo,
+            asperiores debitis assumenda deserunt aspernatur itaque impedit pariatur quae vero eligendi expedita
+            laborum?Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+</body>
+
+</html>
