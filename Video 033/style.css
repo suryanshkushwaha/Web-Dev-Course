@@ -1,0 +1,24 @@
+:root{
+    --primarycolor: blue;
+    --seccolor: yellow;
+}
+
+*{
+    margin: 0;padding: 0;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    background-color: aquamarine;
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
+    padding: 10px;
+    color: var(--primarycolor);
+    background-color: var(--seccolor);
+    cursor: pointer;
+    border-radius: 15px;
+}
