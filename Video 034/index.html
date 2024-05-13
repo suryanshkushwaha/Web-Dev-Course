@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img {
+            float: right;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="" width="430px">
+        <div class="card">Card 1
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nulla ullam praesentium, eligendi nostrum natus, quam adipisci dignissimos labore fugiat amet, iure est aliquid provident! Suscipit hic, aliquid possimus ab enim aut cupiditate corporis!</p>
+        </div>
+        <div class="card">Card 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum. Ex quibusdam magnam ad, totam nisi facilis eos numquam provident cupiditate? Similique, adipisci ut corrupti a quas itaque culpa id accusantium, quaerat voluptatibus odit nemo doloribus repudiandae deserunt ratione facilis quasi repellat, optio fuga nesciunt!
+            </p>
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
