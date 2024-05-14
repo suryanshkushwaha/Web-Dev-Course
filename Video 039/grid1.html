@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            /* defining names in the sqaure brackets of the columns */
+            grid-template-columns: [first]120px [second]100px [third];
+            grid-template-rows: 100px 100px 100px;
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+
+        /* kahan se lekar / kahan tak */
+        .item-4 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            /* shorthand */
+            /* grid-row: 1/2; */
+            grid-column: 1/2;
+        }
+
+        /* to overlap apply property to both items */
+        .item-1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

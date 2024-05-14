@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid2 </title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+width: 80vw;
+            /* divide in fractions */
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 34px;
+            row-gap: 34px;
+            column-gap: 1px;
+            justify-items: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+
+         .item-1 {
+            align-self: flex-start;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+
+</html>
