@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: azure;
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            animation-name: suryanshKaAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: running; */
+            animation-fill-mode: forwards;
+            /* when stopped then remembers it last state */
+
+            /* shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes suryanshKaAnimation {
+            from {
+                background-color: red;
+            }
+
+            to {
+                transform: translateX(100px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes suryansh2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
