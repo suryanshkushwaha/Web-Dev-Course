@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    height: 96px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#company-logo {
+    cursor: pointer;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li{
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+#navbar ul li::after{
+    content: "  ￬"
+}
+
+.software-container {
+    margin: 20px auto;
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 100px;
+    width: 210px;
+    align-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "heading"
+        "translation"
+        "buttons";
+        background-color: whitesmoke;
+}
+
+.card h3 {
+    grid-area: heading;
+    font-size: large;
+}
+
+.card p {
+    grid-area: translation;
+    font-size:0.6rem;
+    color: #5e5d5d;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.card .buttons{
+    display: flex;
+    grid-area: buttons;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.card .buttons a button{
+    font-size: 0.6rem;
+    padding: 5px;
+    color: white;
+    border: 0px solid;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card .buttons a:first-child button{ 
+    background-color: rgb(42, 171, 241);
+}
+
+.card .buttons a:last-child button{ 
+    background-color: rgb(8, 180, 31);
+}
+
+@media only screen and (max-width: 455px) {
+
+    .software-container {
+    grid-template-columns: repeat(1, 1fr);
+}
+}
