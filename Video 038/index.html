@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            align-content: flex-start;
+            flex-flow: row wrap;
+            /* GAP used if margin not used in the items! */
+            /* gap: 30px;
+            row-gap: ;
+            column-gap: ;
+            gap: 10px 40px; */
+        }
+
+        .item {
+            height: 62px;
+            width: 62px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            margin: 4px;
+            color: wheat;
+        }
+
+        /* to change the ordering of items, order by default is 0 */
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+
+        .item-1{
+            flex-grow: 2;
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item-1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item order-3">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item order-2">9</div>
+          
+        </div>
+    </main>
+</body>
+
+</html>
