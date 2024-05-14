@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+
+    <style>
+        .container{
+            height: 488px;width: 466px;
+            /* background-color: azure; */
+            border: 2px solid;
+            background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-position: center right;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-repeat: repeat-y;
+            background-clip: content-box;
+        }
+
+        img{
+            width: 466px;
+            height: 488px;
+            object-fit: cover; /* only looks at it's own width and height and not parent ie does not care about container */
+
+            /* image kat toh rahi hai but konsa area dikhana hai? */
+            object-position: bottom right;
+            object-position: 10px 20px;  /* exactly kon sa area dikhana hai */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<!-- <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+    </div>
+</body>
+</html>
