@@ -31,7 +31,7 @@ nav{
 .software-container {
     margin: 20px auto;
     display: grid;
-    width: 70%;
+    width: 52%;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     box-sizing: border-box;
@@ -39,7 +39,7 @@ nav{
 
 .card {
     height: 100px;
-    width: 210px;
+    
     align-content: center;
     text-align: center;
     display: grid;
@@ -47,6 +47,7 @@ nav{
         "translation"
         "buttons";
         background-color: whitesmoke;
+        padding: 20px;
 }
 
 .card h3 {
@@ -70,7 +71,7 @@ nav{
 }
 
 .card .buttons a button{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     padding: 5px;
     color: white;
     border: 0px solid;
