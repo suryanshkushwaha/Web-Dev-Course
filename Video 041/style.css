@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#company-logo {
+    padding-left: 75px;
+    cursor: pointer;
+}
+
+#navbar{
+    padding-right: 75px;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li{
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+#navbar ul li::after{
+    content: "  ￬"
+}
