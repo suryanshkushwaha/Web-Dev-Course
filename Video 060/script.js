@@ -31,3 +31,9 @@ console.log(friend.charAt(0))
 console.log(friend.charAt(110)) // returns blankspace
 
 // strings are immutable!
+// example
+
+let immutable = "Suryansh"
+console.log(immutable[0])
+immutable[0] = "Q"
+console.log(immutable[0])   // it still remains as S and does not change
