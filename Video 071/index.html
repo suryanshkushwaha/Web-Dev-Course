@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Manipulation of CSS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" data-createdby="Suryansh">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+
+    <script>
+        document.querySelector(".box")
+        document.querySelector(".box").innerHTML
+        document.querySelector(".container").innerHTML  // only includes what's inside
+        document.querySelector(".box").innerText
+
+        document.querySelector(".container").outerHTML  // includes self and outside
+
+        document.querySelector(".container").textContent
+
+        document.querySelector(".box").innerHTML = "Hey I am Suryansh"
+
+        document.querySelector(".box").hasAttribute("style")
+        document.querySelector(".box").getAttribute("style")
+        document.querySelector(".box").setAttribute("style", "display: inline")
+        document.querySelector(".box").removeAttribute("style")
+
+        document.querySelector(".container").hidden     // returns false
+        document.querySelector(".container").hidden = true   // makes it true and hides it
+
+        document.querySelector(".box").dataset
+
+        let div = document.createElement("div")
+        div.innerHTML = "I have been inserted <b>by Suryansh</b>"
+        div.setAttribute("class", "created")
+        document.querySelector(".container").append(div)    //appends at the last
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin", "I am under the water. Please help me, it's raining a lot!")
+
+        document.querySelector(".box").remove()
+
+        document.querySelector(".container").classList
+
+        document.querySelector(".container").classList.add("suryansh") // adds another class to the classlist 
+        document.querySelector(".container").classList.remove("suryansh") // removes  class to the classlist
+        document.querySelector(".container").classList.toggle("suryansh") // if class added then remove, if remove then added
+
+    </script>
+</body>
+
+</html>
