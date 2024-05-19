@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking Simulator</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .terminal {
+            font-size: 1.5em;
+        }
+
+        .blinking-dots span {
+            opacity: 0;
+            animation: blink 1s infinite;
+        }
+
+        .blinking-dots span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .blinking-dots span:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .blinking-dots span:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="terminal" id="terminal">
+        <span class="message"></span>
+        <span class="blinking-dots">
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </span>
+    </div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up"
+        ];
+
+        function displayMessage(index) {
+            if (index >= messages.length) return;
+            const terminal = document.getElementById('terminal');
+            const messageSpan = terminal.querySelector('.message');
+
+            messageSpan.textContent = messages[index];
+            const delay = Math.floor(Math.random() * 7 + 1) * 1000;
+
+            setTimeout(() => {
+                displayMessage(index + 1);
+            }, delay);
+        }
+
+        displayMessage(0);
+    </script>
+
+</body>
+
+</html>
