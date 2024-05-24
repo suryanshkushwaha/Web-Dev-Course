@@ -1,0 +1,2 @@
+this file can be accessed since we have put this in the code
+app.use(express.static('public'))
