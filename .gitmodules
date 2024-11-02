@@ -10,3 +10,9 @@
 [submodule "Video 114"]
 	path = Video 114
 	url = https://github.com/suryanshkushwaha/react-TodoList.git
+[submodule "Video 130"]
+	path = Video 130
+	url = https://github.com/suryanshkushwaha/react-vite-Password-Manager.git
+[submodule "Video 131"]
+	path = Video 131
+	url = https://github.com/suryanshkushwaha/project-get-me-a-chai.git
